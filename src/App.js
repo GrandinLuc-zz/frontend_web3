@@ -6,26 +6,19 @@ import {
   Link,
 } from "react-router-dom";
 import Button from '@material-ui/core/Button';
-import List from '@material-ui/core/List'
-import styles from './App.css'
 import HomePage from './pages/Home'
+import loadWeb3 from './scripts/connect'
+
 
 export default function App() {
   return (
     <Router>
       <div>
         <nav>
-          <List>
-            <li>
-              <Button variant="contained" color="primary"><Link to="/" style={{textDecoration: "none"}}>Home</Link></Button>
-            </li>
-            <li>
+            <Button variant="contained" color="primary"><Link to="/" style={{textDecoration: "none"}}>Home</Link></Button>
             <Button variant="contained" color="primary"><Link to="/about" style={{textDecoration: "none"}}>About</Link></Button>
-            </li>
-            <li>
             <Button variant="contained" color="primary"><Link to="/users" style={{textDecoration: "none"}}>Users</Link></Button>
-            </li>
-          </List>
+            <Button variant="contained" color="primary" onClick={() => loadWeb3()}>Login with metamask</Button>
         </nav>
 
         {/* A <Switch> looks through its children <Route>s and
