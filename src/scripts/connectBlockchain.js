@@ -7,11 +7,11 @@ const NETWORK_URL = 'http://127.0.0.1:8545'
 const web3 = new Web3(new Web3.providers.HttpProvider(NETWORK_URL))
 
 
-const SongForCity = new web3.eth.Contract(song.abi, song.address, {
+export const SongForCity = new web3.eth.Contract(song.abi, song.address, {
     from: metamask.eth.accounts[0]
 })
 
-const ToutDoucement = new web3.eth.Contract(toutDou.abi, toutDou.address, {
+export const ToutDoucement = new web3.eth.Contract(toutDou.abi, toutDou.address, {
     from: metamask.eth.accounts[0]
 })
   
