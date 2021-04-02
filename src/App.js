@@ -6,8 +6,9 @@ import {
   Link,
 } from "react-router-dom";
 import Button from '@material-ui/core/Button';
-import HomePage from './pages/Home'
-import loadWeb3 from './scripts/connect'
+import HomePage from './pages/Home';
+import SongPage from './pages/Song';
+import loadWeb3 from './scripts/connect';
 
 
 export default function App() {
@@ -16,7 +17,7 @@ export default function App() {
       <div>
         <nav>
             <Button variant="contained" color="primary"><Link to="/" style={{textDecoration: "none"}}>Home</Link></Button>
-            <Button variant="contained" color="primary"><Link to="/about" style={{textDecoration: "none"}}>About</Link></Button>
+            <Button variant="contained" color="primary"><Link to="/song" style={{textDecoration: "none"}}>Song For A City</Link></Button>
             <Button variant="contained" color="primary"><Link to="/users" style={{textDecoration: "none"}}>Users</Link></Button>
             <Button variant="contained" color="primary" onClick={() => loadWeb3()}>Login with metamask</Button>
         </nav>
@@ -24,8 +25,8 @@ export default function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/about">
-            <About />
+          <Route path="/song">
+            <Song />
           </Route>
           <Route path="/users">
             <Users />
@@ -43,8 +44,8 @@ function Home() {
   return <HomePage/>
 }
 
-function About() {
-  return <h2>About</h2>;
+function Song() {
+  return <SongPage/>;
 }
 
 function Users() {
