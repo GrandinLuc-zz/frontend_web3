@@ -63,7 +63,7 @@ class Song extends Component {
             <div>
                 <div>Name : {this.state.tokenName}</div>
                 <div>Total Tokens : {this.state.totalToken}</div>
-                <div>Image : <img src={this.state.image} height="70" width="70"></img></div>
+                <div>Image : <img src={this.state.image} height="70" width="70" alt="Corresponds to the token"></img></div>
                 <div>Name : {this.state.name} </div>
                 <div>Description : {this.state.description} </div>
                 <button onClick={() => this.claim()}>Claim Token !</button>
