@@ -28,9 +28,9 @@ class Data extends Component {
     render() {
         return (
             <div>
-                <div>Chain Id : {this.state.chainId}</div>
-                <div>Latest Block Number : {this.state.latestBlock}</div>
-                <div>User Address : {this.state.address}</div>
+                <div class="dataBox">Chain Id : {this.state.chainId}</div>
+                <div class="dataBox">Latest Block Number : {this.state.latestBlock}</div>
+                <div class="dataBox">User Address : {this.state.address}</div>
             </div>
         );
     }

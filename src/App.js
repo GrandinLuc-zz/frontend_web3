@@ -12,19 +12,20 @@ import loadWeb3 from './scripts/connect';
 import DoucementPage from "./pages/doucement";
 import TransferPage from "./pages/transfer";
 import HoldersPage from "./pages/holders";
-
+import './App.css'
 
 export default function App() {
   return (
     <Router>
+      <div id="bg"></div>
       <div>
         <nav>
-            <Button variant="contained" color="primary"><Link to="/" style={{textDecoration: "none"}}>Home</Link></Button>
-            <Button variant="contained" color="primary"><Link to="/song" style={{textDecoration: "none"}}>Song For A City</Link></Button>
-            <Button variant="contained" color="primary"><Link to="/doucement" style={{textDecoration: "none"}}>Tout Doucement</Link></Button>
-            <Button variant="contained" color="primary"><Link to="/transfer" style={{textDecoration: "none"}}>Transfer Tokens</Link></Button>
-            <Button variant="contained" color="primary"><Link to="/holders" style={{textDecoration: "none"}}>Token Holders</Link></Button>
-            <Button variant="contained" color="primary" onClick={() => loadWeb3()}>Login with metamask</Button>
+            <Button id="buttonBig" variant="contained" color="primary"><Link to="/" style={{textDecoration: "none"}}>Home</Link></Button>
+            <Button id="buttonBig" variant="contained" color="primary"><Link to="/song" style={{textDecoration: "none"}}>Song For A City</Link></Button>
+            <Button id="buttonBig" variant="contained" color="primary"><Link to="/doucement" style={{textDecoration: "none"}}>Tout Doucement</Link></Button>
+            <Button id="buttonBig" variant="contained" color="primary"><Link to="/transfer" style={{textDecoration: "none"}}>Transfer Tokens</Link></Button>
+            <Button id="buttonBig" variant="contained" color="primary"><Link to="/holders" style={{textDecoration: "none"}}>Token Holders</Link></Button>
+            <Button id="buttonBig" variant="contained" color="primary" onClick={() => loadWeb3()}>Login with metamask</Button>
         </nav>
 
         {/* A <Switch> looks through its children <Route>s and

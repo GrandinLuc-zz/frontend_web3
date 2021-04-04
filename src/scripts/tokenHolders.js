@@ -39,7 +39,7 @@ class Holders extends Component {
     
     render() {
         return (
-            <div id="content">
+            <div class="dataBox" id="content">
                 <div id="son">
                     <h3>Song For A City holders</h3>
                     <table id="tabSong">

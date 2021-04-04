@@ -93,16 +93,16 @@ class Song extends Component {
     render() {
         return (
             <div>
-                <div>Name : {this.state.tokenName}</div>
-                <div>Total Tokens : {this.state.totalToken}</div>
-                <div>Image : <img src={this.state.image} height="70" width="70" alt="Corresponds to the token"></img></div>
-                <div>Name : {this.state.name} </div>
-                <div>Description : {this.state.description} </div>
-                <div>Tokens held by user : {this.state.nbTokenHeld} </div>
+                <div class="dataBox">Name : {this.state.tokenName}</div>
+                <div class="dataBox">Total Tokens : {this.state.totalToken}</div>
+                <div class="dataBox">Image : <img src={this.state.image} height="70" width="70" alt="Corresponds to the token"></img></div>
+                <div class="dataBox">Name : {this.state.name} </div>
+                <div class="dataBox">Description : {this.state.description} </div>
+                <div class="dataBox">Tokens held by user : {this.state.nbTokenHeld} </div>
                 <button onClick={() => this.claim()}>Claim Token !</button>
                 <br/>
-                <h3>Tokens held by the current user :</h3>
-                <div id="tokens"></div>
+                <h3 class="dataBox">Tokens held by the current user :</h3>
+                <div class="dataBox" id="tokens"></div>
             </div>
         );
     }

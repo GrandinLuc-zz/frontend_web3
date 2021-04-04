@@ -1,8 +1,55 @@
+body {
+  margin: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: #000 url('./resources/eth_bg.jpg') center center fixed no-repeat;
+  background-size: cover;
+}
+
+#bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: #000 url('./resources/eth_bg.jpg') center center fixed no-repeat;
+  background-size: cover;
+  filter: blur(5px);
+}
+
+
 .App {
   text-align: center;
 }
 
-.link {
+a {
   text-decoration: none;
+}
+
+a:link {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: white;
+}
+a:active {
+  color: white;
+}
+
+.dataBox {
+  margin-top: 15px;
+  color: white;
+}
+
+#buttonBig {
+  margin: 10px;
 }
 

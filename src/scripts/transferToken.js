@@ -37,10 +37,10 @@ class Transfer extends Component {
                     <option value="Song">Song For A City</option>
                     <option value="Dou">Tout Doucement</option>
                 </select>
-                <p>Adresse du destinataire :</p>
+                <p class="dataBox">Adresse du destinataire :</p>
                 <input type="text" id="addr"></input>
                 <br/>
-                <p>ID du token à transférer :</p>
+                <p class="dataBox">ID du token à transférer :</p>
                 <input type="text" id="id"></input>
                 <br/><br/>
                 <button onClick={() => this.transfer()}>Transfer !</button>
