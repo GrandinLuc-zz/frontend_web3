@@ -12,7 +12,6 @@ class Data extends Component {
             latestBlock: "",
             address: ""
         }
-        this.getAddress = this.getAddress.bind(this)
     }
     
     async componentWillMount() {
@@ -24,10 +23,6 @@ class Data extends Component {
             latestBlock: response1,
             address: response2
         })
-    }
-
-    getAddress() {
-        return this.state.address;
     }
 
     render() {
