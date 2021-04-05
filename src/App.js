@@ -1,11 +1,10 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link,
   useRouteMatch,
-  useParams
 } from "react-router-dom";
 import Button from '@material-ui/core/Button';
 import HomePage from './pages/Home';
@@ -15,8 +14,6 @@ import DoucementPage from "./pages/doucement";
 import TransferPage from "./pages/transfer";
 import HoldersPage from "./pages/holders";
 import './App.css'
-import contract from './scripts/toutDoucement'
-import Web3 from 'web3'
 
 export default function App() {
   return (
